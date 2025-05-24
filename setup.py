@@ -22,11 +22,6 @@ setup(
     license='GNU General Public License v3.0',
     tests_require=['pytest'],
     entry_points={
-        'console_scripts': [
-            # 'control_vehicle = ros2_py_template.control_vehicle:main',
-        ],
-    },
-    entry_points={
     'console_scripts': [
         'game_manager = ros2_py_template.game_manager:main',
     ],
