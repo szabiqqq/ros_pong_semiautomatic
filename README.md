@@ -1,4 +1,4 @@
-# `ros2_py_template` package
+# `ros_pong_semiautomatic` package
 ROS 2 python package.  [![Static Badge](https://img.shields.io/badge/ROS_2-Humble-34aec5)](https://docs.ros.org/en/humble/)
 ## Packages and build
 
