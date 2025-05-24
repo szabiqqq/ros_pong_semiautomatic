@@ -26,4 +26,10 @@ setup(
             # 'control_vehicle = ros2_py_template.control_vehicle:main',
         ],
     },
+    entry_points={
+    'console_scripts': [
+        'game_manager = ros2_py_template.game_manager:main',
+    ],
+},
+
 )
