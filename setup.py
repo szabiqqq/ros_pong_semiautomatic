@@ -1,6 +1,6 @@
-from setuptools import find_packages, setup
-from glob import glob
 import os
+from glob import glob
+from setuptools import setup, find_packages
 
 package_name = 'ros_pong_semiautomatic'
 
@@ -22,9 +22,9 @@ setup(
     license='GNU General Public License v3.0',
     tests_require=['pytest'],
     entry_points={
-    'console_scripts': [
-        'game_manager = ros2_py_template.game_manager:main',
-    ],
-},
-
+        'console_scripts': [
+            'game_manager = ros2_py_template.game_manager:main',
+        ],
+    },
 )
+
