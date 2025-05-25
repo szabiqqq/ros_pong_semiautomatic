@@ -25,7 +25,7 @@ A labda (`turtle1`) két ütő (teknős) között mozog, és szögekben pattan v
 ## 📦 Használat-  Két terminálba kell megynyitni az egyikbe a kovetkezo kodokkal elinditjuk a játékot a másik terminálba pedig a saját oldalunkat inditjuk el és w,s billentyű bemeneteket érzékeli
 
 
-### 1.Terminál-2. terminál
+### 1.Terminál
 
 ```bash
 cd ~/ros2_ws/src
@@ -36,11 +36,11 @@ git clone https://github.com/sze-info/ros2_py_template.git ros_pong_semiautomati
 colcon build --packages-select ros_pong_semiautomatic
  . install/setup.bash
  ros2 launch ros_pong_semiautomatic launch_example1.launch.py
-
+```
 
 
 ### 2.Terminál
-
+```bash
 cd ~/ros2_ws/src
 git clone https://github.com/sze-info/ros2_py_template.git ros_pong_semiautomatic
 
@@ -48,5 +48,5 @@ git clone https://github.com/sze-info/ros2_py_template.git ros_pong_semiautomati
  colcon build --packages-select ros_pong_semiautomatic
  . install/setup.bash
  ros2 run ros_pong_semiautomatic paddle_node
-
+```
  
