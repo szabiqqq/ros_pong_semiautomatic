@@ -22,7 +22,7 @@ A labda (`turtle1`) két ütő (teknős) között mozog, és szögekben pattan v
 
 ---
 
-## 📦 Használat-  Két terminálba kell megynyitni az egyikbe a kovetkezo kodokkal elinditjuk a játékot a másik terminálba pedig a saját oldalunkat inditjuk el és w,s billentyű bemeneteket érzékeli
+## 📦 Használat-  Két terminálba kell megynyitni az egyikbe a következő kódokkal elinditjuk a játékot a másik terminálba pedig a saját oldalunkat inditjuk el és w,s billentyű bemeneteket érzékeli
 
 
 ### 1.Terminál
@@ -57,7 +57,7 @@ git clone https://github.com/sze-info/ros2_py_template.git ros_pong_semiautomati
   <img src="img/jatekmenet.png" width="70%">
 </p>
 
-### Gyozelem es vereseg kiirasa
+### Győzelem es vereség kiírása
 
 <p align="center">
   <img src="img/nyertel.png" width="70%">
