@@ -50,13 +50,13 @@ git clone https://github.com/sze-info/ros2_py_template.git ros_pong_semiautomati
  ros2 run ros_pong_semiautomatic paddle_node
 ```
 
-##Játékmenet
+###Játékmenet
 
 <p align="center">
   <img src="img/jatekmenet.png" width="70%">
 </p>
 
-##Gyozelem es vereseg kiirasa
+###Gyozelem es vereseg kiirasa
 
 <p align="center">
   <img src="img/nyertel.png" width="70%">
