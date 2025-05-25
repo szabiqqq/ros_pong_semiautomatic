@@ -1,32 +1,39 @@
+#!/usr/bin/env python3
+
 from launch import LaunchDescription
 from launch_ros.actions import Node
 
 def generate_launch_description():
     return LaunchDescription([
+        # Turtlesim ablak
         Node(
             package='turtlesim',
-            namespace='turtlesim1',
             executable='turtlesim_node',
-            name='sim'
+            name='turtlesim',
+            output='screen'
         ),
+
+        # Labda (turtle1)
         Node(
-            package='turtlesim',
-            namespace='turtlesim2',
-            executable='turtlesim_node',
-            name='sim'
+            package='ros_pong_semiautomatic',
+            executable='ball_node',
+            name='ball_node',
+            output='screen'
         ),
+
+        # Bal oldali ütő (turtle2)
         Node(
-            package='turtlesim',
-            executable='mimic',
-            name='mimic',
-            remappings=[
-                ('/input/pose', '/turtlesim1/turtle1/pose'),
-                ('/output/cmd_vel', '/turtlesim2/turtle1/cmd_vel'),
-            ]
+            package='ros_pong_semiautomatic',
+            executable='paddle_node',
+            name='paddle_node',
+            output='screen'
         ),
-        # Node(
-        #     package='ros2_python_template',
-        #     executable='simple_sub_node',
-        #     output='screen',
-        # ),
+
+        # Jobb oldali automata ütő (turtle3)
+        Node(
+            package='ros_pong_semiautomatic',
+            executable='right_paddle_node',
+            name='right_paddle_node',
+            output='screen'
+        ),
     ])

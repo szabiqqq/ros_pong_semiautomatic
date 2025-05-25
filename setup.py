@@ -1,6 +1,6 @@
+from setuptools import setup
 import os
 from glob import glob
-from setuptools import setup
 
 package_name = 'ros_pong_semiautomatic'
 
@@ -12,18 +12,21 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-        (os.path.join('share', package_name), glob('launch/*launch.[pxy][yma]*')),
+        (os.path.join('share', package_name), glob('launch/*.launch.py')),  # Launch fájlok
     ],
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='todo',
-    maintainer_email='todo@todo.com',
-    description='Ez egy ROS2 alapú, féleutomata Pong játék.',
+    maintainer_email='szaboaron2003@gmail.com',
+    description='ROS 2 turtlesim pong játék',
     license='GNU General Public License v3.0',
     tests_require=['pytest'],
     entry_points={
-        'console_scripts': [
-            'game_manager = ros_pong_semiautomatic.game_manager:main',
-        ],
-    },
+    'console_scripts': [
+        'ball_node = ros_pong_semiautomatic.ball_node:main',
+        'paddle_node = ros_pong_semiautomatic.paddle_node:main',
+        'right_paddle_node = ros_pong_semiautomatic.right_paddle_node:main',
+    ],
+}
+
 )
