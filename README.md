@@ -8,7 +8,7 @@ A labda (`turtle1`) két ütő (teknős) között mozog, és szögekben pattan v
 ---
 
 ## 👨‍💻 Készítette:
-**Két hallgató közösen** fejlesztette ezt a projektet tanulási célból.
+**Szabó Áron I5EE5T és Kucserka Szabolcs ULB7DX** fejlesztette ezt a projektet tanulási célból.
 
 ---
 
@@ -29,3 +29,16 @@ A labda (`turtle1`) két ütő (teknős) között mozog, és szögekben pattan v
 ```bash
 cd ~/ros2_ws/src
 git clone https://github.com/sze-info/ros2_py_template.git ros_pong_semiautomatic
+
+### 2. Két terminálba kell megynyitni az egyikbe a kovetkezo kodokkal elinditjuk a játékot a másik terminálba pedig a saját oldalunkat inditjuk el és w,s billentyű bemeneteket érzékeli
+
+###1. terminál
+colcon build --packages-select ros_pong_semiautomatic
+ . install/setup.bash
+ ros2 launch ros_pong_semiautomatic launch_example1.launch.py
+
+ ###2.terminál
+ cd ros2_ws/
+ colcon build --packages-select ros_pong_semiautomatic
+ . install/setup.bash
+ ros2 run ros_pong_semiautomatic paddle_node
