@@ -8,6 +8,8 @@ import sys
 import termios
 import tty
 import select
+import time  
+
 
 def get_key():
     """Billentyű lenyomás azonnali érzékelése (ENTER nélkül)"""
@@ -55,6 +57,11 @@ class PaddleNode(Node):
 def main(args=None):
     global settings
     settings = termios.tcgetattr(sys.stdin)  # billentyű állapot mentése
+
+    print("⏳ Várakozás 10 másodpercig a játék többi komponensére...")
+    time.sleep(10)  # ✅ Várakozás, hogy a többi node elinduljon
+    print("✅ Indul a paddle vezérlés!")
+
 
     rclpy.init(args=args)
     node = PaddleNode()

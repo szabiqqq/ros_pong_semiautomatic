@@ -26,6 +26,7 @@ setup(
         'ball_node = ros_pong_semiautomatic.ball_node:main',
         'paddle_node = ros_pong_semiautomatic.paddle_node:main',
         'right_paddle_node = ros_pong_semiautomatic.right_paddle_node:main',
+        'pong_display_node = ros_pong_semiautomatic.pong_display_node:main',
     ],
 }
 
