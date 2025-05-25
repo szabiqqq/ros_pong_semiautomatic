@@ -70,7 +70,7 @@ git clone https://github.com/sze-info/ros2_py_template.git ros_pong_semiautomati
 </p>
 
 <p align="center">
-  <img src="img/pygame.png" width="70%">
+  <img src="img/pygamescreen.png" width="70%">
 </p>
 
 ### Győzelem es vereség kiírása
