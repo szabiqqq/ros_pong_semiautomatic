@@ -49,4 +49,19 @@ git clone https://github.com/sze-info/ros2_py_template.git ros_pong_semiautomati
  . install/setup.bash
  ros2 run ros_pong_semiautomatic paddle_node
 ```
+
+##Játékmenet
+
+<p align="center">
+  <img src="img/jatekmenet.png" width="70%">
+</p>
+
+##Gyozelem es vereseg kiirasa
+
+<p align="center">
+  <img src="img/nyertel.png" width="70%">
+</p>
+<p align="center">
+  <img src="img/vesztes.png" width="70%">
+</p>
  
