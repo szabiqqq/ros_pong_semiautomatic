@@ -1,59 +1,31 @@
-# `ros_pong_semiautomatic` package
-ROS 2 python package.  [![Static Badge](https://img.shields.io/badge/ROS_2-Humble-34aec5)](https://docs.ros.org/en/humble/)
-## Packages and build
+# `ros_pong_semiautomatic` package  
+Pong játék ROS 2-ben, Python segítségével, turtlesim vizualizációval.  
+[![Static Badge](https://img.shields.io/badge/ROS_2-Humble-34aec5)](https://docs.ros.org/en/humble/)
 
-It is assumed that the workspace is `~/ros2_ws/`.
+Ez a csomag egy egyszerű **Pong** játékot valósít meg ROS 2 környezetben.  
+A labda (`turtle1`) két ütő (teknős) között mozog, és szögekben pattan vissza. A bal ütő (`turtle2`) kézzel irányítható, míg a jobb oldali ütő (`turtle3`) egy mesterséges intelligencia által vezérelt bot, amely próbálja követni a labdát — de verhető. 🏓
 
-### Clone the packages
-``` r
+---
+
+## 👨‍💻 Készítette:
+**Két hallgató közösen** fejlesztette ezt a projektet tanulási célból.
+
+---
+
+## 🚀 Funkciók
+
+- A labda szögben pattog az ütőkről
+- Falról **nem pattan vissza**, csak ütőről
+- Győzelem/vereség detektálás, ha a labda elhagyja a pályát
+- Jobb oldali ütő követi a labdát, de hibázhat
+- Bal oldali ütő `w/s` billentyűkkel vezérelhető
+
+---
+
+## 📦 Használat
+
+### 1. Klónozd és fordítsd
+
+```bash
 cd ~/ros2_ws/src
-```
-``` r
-git clone https://github.com/sze-info/ros2_py_template
-```
-
-### Build ROS 2 packages
-``` r
-cd ~/ros2_ws
-```
-``` r
-colcon build --packages-select ros2_py_template --symlink-install
-```
-
-<details>
-<summary> Don't forget to source before ROS commands.</summary>
-
-``` bash
-source ~/ros2_ws/install/setup.bash
-```
-</details>
-
-``` r
-ros2 launch ros2_py_template launch_example1.launch.py
-```
-
-# Delete this part if you are using it as a template
-
-ROS 2 pacage template, to get started, use template by clicking on the Green button labeled [`Use this template`](https://github.com/sze-info/ros2_py_template/generate) / [`Create new repository`](https://github.com/sze-info/ros2_py_template/generate). 
-
-<p align="center"><img src="img/use_this_template01.png" width="60%" /></p>
-
-
-Let's assume 
-- your Github username is `mycoolusername`
-- your ROS 2 repo shold be `cool_ros2_package`
-
-Replace everything in the cloned repo:
-
-- `ros2_py_template` >> `cool_ros2_package` (the folder was already renamed after `Use this template`)
-- `sze-info` >> `mycoolusername`
-- find all `todo` strings and fill the blanks
-
-The easiest way is VS code:
-
-<p align="center"><img src="img/replace01.png" width="90%" /></p>
-
-> [!IMPORTANT]  
-> Don't forget to rename the directory (folder) and the file too.
-
-Now `colcon build` your ROS 2 package and you can start wokring.
+git clone https://github.com/sze-info/ros2_py_template.git ros_pong_semiautomatic
