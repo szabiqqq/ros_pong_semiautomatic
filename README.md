@@ -8,7 +8,7 @@ A labda (`turtle1`) két ütő (teknős) között mozog, és szögekben pattan v
 ---
 
 ## 👨‍💻 Készítette:
-**Szabó Áron I5EE5T és Kucserka Szabolcs ULB7DX** fejlesztette ezt a projektet tanulási célból.
+**Szabó Áron I5EE5T és Kucserka Szabolcs ULD7BX** fejlesztette ezt a projektet tanulási célból.
 
 ---
 
